@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency-Hotline</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/logo-dark.png"
+      type="image/x-icon"
+    />
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+        <!-- font awesome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+     <style>
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
 </head>
-<body>
-    
+<body class="max-w-[1560px] bg-[#41ff6b1a] mx-auto inter">
+      <nav class="flex justify-between items-center mx-5 my-1 px-2 py-4 max-sm:flex-col max-sm:gap-6 ">
+        <div class="flex items-center gap-2  max-sm:justify-start max-sm:w-80">
+            <img class=" h-10 bg-[#ffe3e2] rounded-xl " src="assets/logo.png" alt="">
+            <p class="font-extrabold w-4 gap-0 text-[#006747]">Emergency Service</p>
+        </div>
+        <div class="flex gap-9 max-sm:gap-10">
+            <div class="flex items-center gap-1 bg-[#41ff6b1a] px-4 rounded-2xl  max-sm:w-15">
+                <span id="initial-heart">0</span>
+                <img  class="h-5 "  src="assets/heart.png" alt="">
+            </div>
+            <div class="flex items-center gap-1 bg-[#41ff6b1a] px-4 rounded-2xl ">
+                <span id="coins">100</span>
+                <img class="h-5" src="assets/coin.png" alt="">
+            </div>
+            <div>
+                <button class="call-btn bg-[#00a63e] text-white py-1 px-5 rounded-2xl font-medium text-sm "><span id="initial-copy" class="pr-1">0</span>Copy</button>
+            </div>
+        </div>
+    </nav>
+  <!-- javascript link -->
+   <script src="./index.js"></script>
 </body>
 </html>
